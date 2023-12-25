@@ -26,9 +26,22 @@ const cartSlice = createSlice({
         state.itens.push(productAmount);
       }
     },
+
+    remove: (state, action: PayloadAction<Product>) => {
+      const product = action.payload;
+
+      const itemIndex = state.itens.findIndex((item) => item.id === product.id);
+
+      if (state.itens[itemIndex].amount > 1) {
+        state.itens[itemIndex].amount = state.itens[itemIndex].amount - 1;
+        return;
+      }
+
+      state.itens = state.itens.filter((item) => item.id !== product.id);
+    },
   },
 });
 
-export const { add } = cartSlice.actions;
+export const { add, remove } = cartSlice.actions;
 
 export default cartSlice.reducer;
