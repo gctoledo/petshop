@@ -1,4 +1,4 @@
-import { createGlobalStyle } from "styled-components";
+import styled, { createGlobalStyle } from "styled-components";
 
 const GlobalStyle = createGlobalStyle`
 * {
@@ -6,8 +6,18 @@ const GlobalStyle = createGlobalStyle`
   padding: 0;
   font-family: sans-serif;
   list-style: none;
+
+  body {
+    background-color: #f1f1f1;
+  }
 }
 
+`;
+
+export const Container = styled.div`
+  max-width: 1024px;
+  width: 100%;
+  margin: 0 auto;
 `;
 
 export default GlobalStyle;
