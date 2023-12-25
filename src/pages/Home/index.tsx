@@ -1,8 +1,13 @@
+import ProductList from "../../components/ProductList";
+import { Container } from "../../styles";
+import { SectionTitle } from "./styles";
+
 const Home = () => {
   return (
-    <div>
-      <h1>Home</h1>
-    </div>
+    <Container>
+      <SectionTitle>Produtos</SectionTitle>
+      <ProductList />
+    </Container>
   );
 };
 
