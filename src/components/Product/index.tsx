@@ -6,12 +6,13 @@ import { BsFillCartPlusFill } from "react-icons/bs";
 import {
   AddButton,
   Card,
-  Price,
   ProductImage,
   ProductInfo,
   ProductTitle,
 } from "./styles";
 import { Product as ProductProps } from "../../types";
+import { Link } from "react-router-dom";
+import { Price } from "../../styles";
 
 type Props = {
   product: ProductProps;
@@ -29,7 +30,9 @@ const Product = ({ product }: Props) => {
       <ProductImage src={product.cover} alt={product.title} />
       <ProductInfo>
         <div>
-          <ProductTitle>{product.title}</ProductTitle>
+          <ProductTitle>
+            <Link to={`produto/${product.id}`}>{product.title}</Link>
+          </ProductTitle>
           <Price>
             {product.price.toLocaleString("pt-BR", {
               style: "currency",

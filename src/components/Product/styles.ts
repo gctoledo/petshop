@@ -17,14 +17,11 @@ export const ProductTitle = styled.h3`
   font-size: 14px;
   font-weight: 400;
   line-height: 26px;
-`;
 
-export const Price = styled.p`
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 26px;
-  text-transform: capitalize;
-  color: #a18a68;
+  a {
+    text-decoration: none;
+    color: #000;
+  }
 `;
 
 export const ProductInfo = styled.div`
