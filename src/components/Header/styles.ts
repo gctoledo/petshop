@@ -7,6 +7,10 @@ export const Header = styled.header`
   text-align: center;
   padding: 8px 0;
   margin-bottom: 24px;
+
+  a {
+    text-decoration: none;
+  }
 `;
 
 export const Logo = styled.h1`
