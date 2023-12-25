@@ -1,6 +1,7 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 
 import { Product } from "../../types";
+import { toast } from "react-toastify";
 
 type CartState = {
   itens: Product[];
@@ -30,6 +31,7 @@ const cartSlice = createSlice({
           totalPrice: newProduct.price,
         };
         state.itens.push(productAmount);
+        toast.success("Adicionado ao carrinho");
       }
     },
 
@@ -46,6 +48,8 @@ const cartSlice = createSlice({
       }
 
       state.itens = state.itens.filter((item) => item.id !== product.id);
+
+      toast.warn("Item removido do carrinho");
     },
   },
 });

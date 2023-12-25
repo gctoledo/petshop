@@ -20,6 +20,10 @@ type Props = {
 const Product = ({ product }: Props) => {
   const dispatch = useDispatch();
 
+  const addProduct = () => {
+    dispatch(add(product));
+  };
+
   return (
     <Card>
       <ProductImage src={product.cover} alt={product.title} />
@@ -34,8 +38,8 @@ const Product = ({ product }: Props) => {
           </Price>
         </div>
         <div>
-          <AddButton type="button" onClick={() => dispatch(add(product))}>
-            <BsFillCartPlusFill size={20} color={"#212121"} />
+          <AddButton type="button" onClick={() => addProduct()}>
+            <BsFillCartPlusFill size={24} color={"#212121"} />
           </AddButton>
         </div>
       </ProductInfo>
