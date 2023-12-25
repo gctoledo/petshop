@@ -4,4 +4,5 @@ export type Product = {
   description: string;
   price: number;
   cover: string;
+  amount: number;
 };

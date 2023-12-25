@@ -17,9 +17,13 @@ const cartSlice = createSlice({
     add: (state, action: PayloadAction<Product>) => {
       const newProduct = action.payload;
       if (state.itens.find((game) => game.id === newProduct.id)) {
-        alert("Jogo ja adicionado");
+        const indexItem = state.itens.findIndex(
+          (item) => item.id === newProduct.id
+        );
+        state.itens[indexItem].amount = state.itens[indexItem].amount + 1;
       } else {
-        state.itens.push(newProduct);
+        const productAmount = { ...newProduct, amount: 1 };
+        state.itens.push(productAmount);
       }
     },
   },
