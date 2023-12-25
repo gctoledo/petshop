@@ -15,7 +15,7 @@ export const ProductImage = styled.img`
 
 export const ProductTitle = styled.h3`
   font-family: DM Sans;
-  font-size: 20px;
+  font-size: 14px;
   font-weight: 400;
   line-height: 26px;
 `;
@@ -31,6 +31,8 @@ export const Price = styled.p`
 
 export const ProductInfo = styled.div`
   display: flex;
+  width: 100%;
   justify-content: space-between;
   align-items: center;
+  gap: 18px;
 `;

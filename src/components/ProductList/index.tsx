@@ -1,13 +1,16 @@
 import { List } from "./styles";
 import Product from "../Product";
 
+import { useGetProductsQuery } from "../../services/api";
+
 const ProductList = () => {
+  const { data: products } = useGetProductsQuery();
+
   return (
     <List>
-      <Product />
-      <Product />
-      <Product />
-      <Product />
+      {products?.map((product) => (
+        <Product key={product.id} product={product} />
+      ))}
     </List>
   );
 };

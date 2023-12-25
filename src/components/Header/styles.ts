@@ -15,7 +15,8 @@ export const Logo = styled.h1`
   font-size: 35px;
   font-style: normal;
   font-weight: 400;
-  line-height: 40.5px;
+  line-height: 40px;
+  user-select: none;
 
   span {
     color: #191919;
