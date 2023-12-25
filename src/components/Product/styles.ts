@@ -14,14 +14,12 @@ export const ProductImage = styled.img`
 `;
 
 export const ProductTitle = styled.h3`
-  font-family: DM Sans;
   font-size: 14px;
   font-weight: 400;
   line-height: 26px;
 `;
 
 export const Price = styled.p`
-  font-family: DM Sans;
   font-size: 16px;
   font-weight: 500;
   line-height: 26px;
@@ -35,4 +33,10 @@ export const ProductInfo = styled.div`
   justify-content: space-between;
   align-items: center;
   gap: 18px;
+`;
+
+export const AddButton = styled.button`
+  cursor: pointer;
+  border: none;
+  outline: none;
 `;

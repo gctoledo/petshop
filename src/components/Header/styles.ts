@@ -6,6 +6,7 @@ export const Header = styled.header`
   align-items: center;
   text-align: center;
   padding: 8px 0;
+  margin-bottom: 24px;
 `;
 
 export const Logo = styled.h1`
@@ -20,5 +21,23 @@ export const Logo = styled.h1`
 
   span {
     color: #191919;
+  }
+`;
+
+export const CartIcon = styled.div`
+  max-height: 30px;
+  div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    font-family: sans-serif;
+    border-radius: 50%;
+    transform: translateY(-30px) translateX(12px);
+    background-color: #a18a68;
+    padding: 4px;
+    width: 8px;
+    height: 8px;
+    color: #fff;
   }
 `;
