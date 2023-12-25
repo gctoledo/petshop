@@ -4,9 +4,8 @@ export const ProductContainer = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 16px;
-
   background-color: #f9f9f9;
-  padding: 8px;
+  padding: 16px 8px;
   border-radius: 6px;
 
   img {

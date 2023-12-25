@@ -2,11 +2,22 @@ import { useParams } from "react-router-dom";
 import { Container, Price } from "../../styles";
 import { useGetProductByIDQuery } from "../../services/api";
 import { ProductContainer, ProductInfos } from "./styles";
+import { useDispatch } from "react-redux";
+import { add } from "../../store/reducers/cart";
 
 const ProductDetails = () => {
   const { id } = useParams();
 
   const { data: product } = useGetProductByIDQuery(Number(id));
+
+  const dispatch = useDispatch();
+
+  const addToCart = () => {
+    if (product !== undefined) {
+      dispatch(add(product));
+    }
+    return;
+  };
 
   return (
     <Container>
@@ -21,7 +32,7 @@ const ProductDetails = () => {
             })}
           </Price>
           <p>{product?.description}</p>
-          <button>Adicionar ao carrinho</button>
+          <button onClick={() => addToCart()}>Adicionar ao carrinho</button>
         </ProductInfos>
       </ProductContainer>
     </Container>

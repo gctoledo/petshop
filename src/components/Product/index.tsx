@@ -27,7 +27,9 @@ const Product = ({ product }: Props) => {
 
   return (
     <Card>
-      <ProductImage src={product.cover} alt={product.title} />
+      <Link to={`produto/${product.id}`}>
+        <ProductImage src={product.cover} alt={product.title} />
+      </Link>
       <ProductInfo>
         <div>
           <ProductTitle>
