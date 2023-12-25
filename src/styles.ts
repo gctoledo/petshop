@@ -9,6 +9,7 @@ const GlobalStyle = createGlobalStyle`
 
   body {
     background-color: #f1f1f1;
+    padding-bottom: 80px;
   }
 }
 

@@ -48,8 +48,16 @@ export const RemoveButton = styled.button`
 export const AddRemoveButton = styled.button<Props>`
   border: none;
   background-color: ${(props) => (props.action === "add" ? "green" : "red")};
-  padding: 0 4px;
+  padding: 2px 6px;
+  margin: 0 4px;
   color: #fff;
+  font-weight: bold;
   border-radius: 6px;
   cursor: pointer;
+`;
+
+export const TotalCart = styled.p`
+  margin-top: 24px;
+  font-weight: bold;
+  font-size: 20px;
 `;
