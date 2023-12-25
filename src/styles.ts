@@ -21,4 +21,12 @@ export const Container = styled.div`
   margin: 0 auto;
 `;
 
+export const Price = styled.p`
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 26px;
+  text-transform: capitalize;
+  color: #a18a68;
+`;
+
 export default GlobalStyle;
