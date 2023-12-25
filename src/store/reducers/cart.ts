@@ -35,7 +35,7 @@ const cartSlice = createSlice({
       }
     },
 
-    remove: (state, action: PayloadAction<Product>) => {
+    reduce: (state, action: PayloadAction<Product>) => {
       const product = action.payload;
 
       const itemIndex = state.itens.findIndex((item) => item.id === product.id);
@@ -51,9 +51,17 @@ const cartSlice = createSlice({
 
       toast.warn("Item removido do carrinho");
     },
+
+    remove: (state, action: PayloadAction<Product>) => {
+      const product = action.payload;
+
+      state.itens = state.itens.filter((item) => item.id !== product.id);
+
+      toast.warn("Item removido do carrinho");
+    },
   },
 });
 
-export const { add, remove } = cartSlice.actions;
+export const { add, remove, reduce } = cartSlice.actions;
 
 export default cartSlice.reducer;

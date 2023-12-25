@@ -9,7 +9,7 @@ import {
   RemoveButton,
   TotalCart,
 } from "./styles";
-import { add, remove } from "../../store/reducers/cart";
+import { add, remove, reduce } from "../../store/reducers/cart";
 
 const Cart = () => {
   const items = useSelector((state: RootReducer) => state.cart.itens);
@@ -40,7 +40,7 @@ const Cart = () => {
                   Quantidade:{" "}
                   <AddRemoveButton
                     action="remove"
-                    onClick={() => dispatch(remove(item))}
+                    onClick={() => dispatch(reduce(item))}
                   >
                     -
                   </AddRemoveButton>{" "}
