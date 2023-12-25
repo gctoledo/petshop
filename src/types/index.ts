@@ -5,4 +5,5 @@ export type Product = {
   price: number;
   cover: string;
   amount: number;
+  totalPrice: number;
 };
