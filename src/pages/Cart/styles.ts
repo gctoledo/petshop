@@ -1,10 +1,6 @@
 import styled from "styled-components";
 import { Container } from "../../styles";
 
-type Props = {
-  action: "add" | "remove";
-};
-
 export const CartContainer = styled(Container)`
   display: flex;
   flex-direction: column;
@@ -66,15 +62,16 @@ export const RemoveButton = styled.button`
   }
 `;
 
-export const AddRemoveButton = styled.button<Props>`
-  border: none;
-  background-color: ${(props) => (props.action === "add" ? "green" : "red")};
-  padding: 2px 6px;
+export const AddRemoveButton = styled.button`
+  background-color: #f9f9f9;
+  padding: 2px 8px;
   margin: 0 4px;
-  color: #fff;
+  color: #191919;
   font-weight: bold;
   border-radius: 6px;
   cursor: pointer;
+  font-size: 16px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
 `;
 
 export const TotalCart = styled.p`

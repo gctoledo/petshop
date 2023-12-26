@@ -38,17 +38,11 @@ const Cart = () => {
                 </span>
                 <span>
                   Quantidade:{" "}
-                  <AddRemoveButton
-                    action="remove"
-                    onClick={() => dispatch(reduce(item))}
-                  >
+                  <AddRemoveButton onClick={() => dispatch(reduce(item))}>
                     -
                   </AddRemoveButton>{" "}
                   {item.amount}{" "}
-                  <AddRemoveButton
-                    action="add"
-                    onClick={() => dispatch(add(item))}
-                  >
+                  <AddRemoveButton onClick={() => dispatch(add(item))}>
                     +
                   </AddRemoveButton>
                 </span>

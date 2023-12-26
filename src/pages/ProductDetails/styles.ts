@@ -20,9 +20,8 @@ export const ProductInfos = styled.div`
   gap: 24px;
 
   button {
-    background-color: #515151;
+    background-color: #919191;
     padding: 8px;
-    font-weight: bold;
     border: none;
     color: #fff;
     cursor: pointer;
