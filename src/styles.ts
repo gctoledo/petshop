@@ -19,6 +19,14 @@ export const Container = styled.div`
   max-width: 1024px;
   width: 100%;
   margin: 0 auto;
+
+  @media (max-width: 1024px) {
+    width: 90%;
+  }
+
+  @media (max-width: 660px) {
+    width: 85%;
+  }
 `;
 
 export const Price = styled.p`
