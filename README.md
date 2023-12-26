@@ -1,6 +1,6 @@
 # Petshop
 
-O projeto consiste em uma lista de produtos geradas por uma requisição a uma API fake usando o Redux Toolkit, e o de gerenciamento de estados para os itens do carrinho.
+O projeto consiste em uma lista de produtos geradas por uma requisição a uma API fake usando o Redux Toolkit, com o gerenciamento de estados para os itens do carrinho.
 
 ## 🔥 Introdução
 
