@@ -8,9 +8,17 @@ export const ProductContainer = styled.div`
   padding: 16px 8px;
   border-radius: 6px;
 
+  @media (max-width: 660px) {
+    display: block;
+  }
+
   img {
     height: 450px;
     border-radius: 6px;
+
+    @media (max-width: 660px) {
+      width: 100%;
+    }
   }
 `;
 
