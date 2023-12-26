@@ -1,30 +1,31 @@
-# React + TypeScript + Vite
+# Petshop
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+O projeto consiste em uma lista de produtos geradas por uma requisição a uma API fake usando o Redux Toolkit, e o de gerenciamento de estados para os itens do carrinho.
 
-Currently, two official plugins are available:
+## 🔥 Introdução
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Projeto para pratirar gerenciamento de estado com Redux, utilizando React Router DOM para fazer o gerenciamento de rotas. O projeto foi estilizado utilizando o Styled Components. Todo gerenciamento do estado do carrinho é feita pelo Redux, e a lista de produtos é alimentada por uma API fake, onde a requisição é feita pelo Redux Toolkit Query.
 
-## Expanding the ESLint configuration
+### 🔨 Guia de instalação
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+Para visualizar o projeto é necessário possuir o NodeJS instalado em sua máquina. Você pode fazer um clone do repositório e executar os seguintes comandos no terminal para visualizar o projeto:
 
-- Configure the top-level `parserOptions` property like this:
+Passo 1:
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+```
+npm i
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+Passo 2:
+
+```
+npm start
+```
+
+## 📦 Tecnologias usadas:
+
+- ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
+- ![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)
+- ![React Router](https://img.shields.io/badge/React_Router-CA4245?style=for-the-badge&logo=react-router&logoColor=white)
+- ![Redux](https://img.shields.io/badge/redux-%23593d88.svg?style=for-the-badge&logo=redux&logoColor=white)
+- ![Styled Components](https://img.shields.io/badge/styled--components-DB7093?style=for-the-badge&logo=styled-components&logoColor=white)
