@@ -19,7 +19,7 @@ npm i
 Passo 2:
 
 ```
-npm start
+npm run dev
 ```
 
 ## 📦 Tecnologias usadas:
